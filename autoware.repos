@@ -85,10 +85,6 @@ repositories:
     type: git
     url: https://github.com/tier4/sensor_component_description.git
     version: main
-  sensor_component/external/tamagawa_imu_driver:
-    type: git
-    url: https://github.com/tier4/tamagawa_imu_driver.git
-    version: ros2
   sensor_component/external/nebula:
     type: git
     url: https://github.com/tier4/nebula.git
@@ -98,36 +94,20 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/transport_drivers
     version: main
-  # Continental compatible version of ROS 2 socket CAN
-  sensor_component/ros2_socketcan:
+  # xsens IMU GNSS/INS NTRIP driver
+  sensor_component/external/Xsens_MTi_ROS_Driver_and_Ntrip_Client:
     type: git
-    url: https://github.com/autowarefoundation/ros2_socketcan
-    version: main
+    url: https://github.com/LMA-FEM-UNICAMP/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
+    version: ros2
   # sensor_kit
-  sensor_kit/sample_sensor_kit_launch:
+  sensor_kit/vilma_sensor_kit_launch:
     type: git
-    url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
-    version: 0.41.0
-  sensor_kit/external/awsim_sensor_kit_launch: # TODO: Integrate into sample_sensor_kit_launch
-    type: git
-    url: https://github.com/tier4/awsim_sensor_kit_launch.git
-    version: 0.41.0
-  sensor_kit/awsim_labs_sensor_kit_launch:
-    type: git
-    url: https://github.com/autowarefoundation/awsim_labs_sensor_kit_launch.git
-    version: 0.41.1
-  sensor_kit/single_lidar_sensor_kit_launch:
-    type: git
-    url: https://github.com/autowarefoundation/single_lidar_sensor_kit_launch.git
-    version: 0.41.0
+    url: https://github.com/LMA-FEM-UNICAMP/vilma_sensor_kit_launch.git
+    version: main
   # vehicle
   vehicle/vilma_vehicle_launch:
     type: git
     url: https://github.com/LMA-FEM-UNICAMP/vilma_vehicle_launch
-    version: main
-  vehicle/awsim_labs_vehicle_launch:
-    type: git
-    url: https://github.com/autowarefoundation/awsim_labs_vehicle_launch.git
     version: main
   vehicle/external/vilma_interface:
     type: git
