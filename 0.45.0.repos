@@ -1,12 +1,10 @@
-# Autoware Core/Universe 0.45.0
-
 repositories:
   # core
   core/autoware_msgs:
     type: git
     url: https://github.com/autowarefoundation/autoware_msgs.git
     version: 1.9.0
-  # TODO (isamu-takagi): Use a released version when autoware.universe uses a released version.
+  # TODO (isamu-takagi): Use a released version when autoware_universe uses a released version.
   core/autoware_adapi_msgs:
     type: git
     url: https://github.com/autowarefoundation/autoware_adapi_msgs.git
@@ -108,31 +106,11 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/transport_drivers
     version: 39ebd8afe1bb9760a6cd6272e428468480f6de90
-  # xsens IMU GNSS/INS NTRIP driver
-  sensor_component/external/Xsens_MTi_ROS_Driver_and_Ntrip_Client:
+  # Continental compatible version of ROS 2 socket CAN
+  sensor_component/ros2_socketcan:
     type: git
-    url: https://github.com/LMA-FEM-UNICAMP/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
-    version: ros2
-  # sensor_kit
-  sensor_kit/vilma_sensor_kit_launch:
-    type: git
-    url: https://github.com/LMA-FEM-UNICAMP/vilma_sensor_kit_launch.git
-    version: main
-  # vehicle
-  vehicle/vilma_vehicle_launch:
-    type: git
-    url: https://github.com/LMA-FEM-UNICAMP/vilma_vehicle_launch
-    version: main
-  vehicle/external/vilma_interface:
-    type: git
-    url: https://github.com/LMA-FEM-UNICAMP/vilma_interface
-    version: udp
-  # param
-  param/autoware_individual_params:
-    type: git
-    url: https://github.com/autowarefoundation/autoware_individual_params.git
-    version: main
-
+    url: https://github.com/autowarefoundation/ros2_socketcan
+    version: e39a814180b03f00a5692b6951a5d4e9f0463486
   # middleware
   # TODO(TIER IV): During the transition period of Agnocast introduction,
   # the Agnocast ROS packages are provided as a source build.
