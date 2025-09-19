@@ -1,2 +1,4 @@
+colcon build --symlink-install --continue-on-error --parallel-workers $(nproc) --cmake-args -DCMAKE_BUILD_TYPE=Release
+
 ros2 launch autoware_launch planning_simulator.launch.xml map_path:=$HOME/autoware_ws/autoware_maps/vilma_autoware_maps/rua_daniel_hogan/osm vehicle_model:=vilma_vehicle sensor_model:=vilma_sensor_kit
 
