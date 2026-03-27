@@ -113,6 +113,11 @@ repositories:
     type: git
     url: https://github.com/LMA-FEM-UNICAMP/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
     version: ros2
+  # ETSI V2X driver for Cohda
+  sensor_component/external/etsi_its_messages:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/etsi_its_messages
+    version: main
   # sensor_kit
   sensor_kit/vilma_sensor_kit_launch:
     type: git
